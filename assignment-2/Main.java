@@ -1,21 +1,24 @@
-class student{
+class Student {
     String name;
-    int rollno;
-    void display(){
-        System.out.println("Name "+name);
-        System.out.print("rollno "+rollno);
+    int age;
 
+    Student(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    void display() {
+        System.out.println(name + " " + age);
     }
 }
 
+public class Main {
+    public static void main(String[] args) {
 
-public class Main{
- public static void main(String[] args) {
-    student s1=new student();
-    s1.name="vijay";
-    s1.rollno=1024170415;
-    s1.display();
- }
+        Student s1 = new Student("Vijay", 20);
+        Student s2 = new Student("Rahul", 21);
 
-  
+        s1.display();
+        s2.display();
+    }
 }

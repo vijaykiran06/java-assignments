@@ -47,7 +47,7 @@ public class factorial {
     System.out.print(ans+"factorial of "+n);
    } 
 }
-
+ nb 
    //question-4
    
  import java.util.Scanner;
